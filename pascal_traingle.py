@@ -1,3 +1,9 @@
+'''
+This program creates 3 functions - 1) function to find factorial, 2) function to find combination and
+3) function to print pascal triangle
+'''
+
+
 def factorial(n):
     fact = n
     
