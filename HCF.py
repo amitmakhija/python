@@ -14,7 +14,7 @@ if __name__ == '__main__':
     sys.setrecursionlimit(150000)
     N = list(map(int,list(input("Enter two numbers separated by space : ").split())))
     a = main(N[0],N[1])
-    for i in range(len(N)-1):
-        a = main(a,N[i+1])
+    for i in range(len(N)-2):
+        a = main(a,N[i+2])
         
     print(a)
