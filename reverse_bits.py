@@ -1,7 +1,8 @@
 '''
 Problem Description
 Reverse the bits of an 32 bit unsigned integer A.
-This function takes a number, finds binary of that number, stores the binary in 32 bits with extra zeros in the front
+This function takes a number, finds binary of that number, 
+stores the binary in 32 bits with extra zeros in the front
 Reverses the binary and then returns the integer value.
 '''
 
