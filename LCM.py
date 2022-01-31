@@ -1,3 +1,7 @@
+'''
+This program takes two integers and finds out their LCM
+'''
+
 def main(a,b):
     def find_hcf(a,b):
         if a == 0:
