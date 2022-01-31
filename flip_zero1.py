@@ -7,7 +7,7 @@ This program takes a string of binary digits. Converts any one zero to one from 
 the count of no. of ones is maximum
 
 ### unable to understand the logic... have copied the code.. 
-### Requires further learning.
+### Requires further learning..
 '''
 
 
