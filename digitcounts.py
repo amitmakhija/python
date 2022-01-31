@@ -1,4 +1,5 @@
-''' This program takes integer and counts the no. of digits in the integer without converting or slicing a string
+''' This program takes integer and counts the no. of digits in the integer without converting or slicing a 
+string...................
 '''
 
 def main(n):
