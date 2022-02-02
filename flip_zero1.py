@@ -11,28 +11,39 @@ the count of no. of ones is maximum
 '''
 
 
-lst1 = ["101100000111","101100010111","001101100110","101110100111"]
+lst1 = ["1011"]
 
-def solve(lst):
+# def solve(lst):
+#     l = 0
+#     zero_count = 0 #keeps count of zeros
+#     ans = 0
+#     for i in range(len(lst)):
+
+#         if lst[i] == "0": #if lst[i] eq 0; cnt is increased by 1
+#             zero_count+=1
+
+#         #cnt += A[r] == "0"
+
+#         if zero_count > 1:
+#             if lst[l] == "0":
+#                 zero_count -= 1
+#             l += 1
+#         ans = max(ans, i - l + 1)
+
+#     return min(ans, lst.count('1'))
+
+def solve(A):
     l = 0
-    zero_count = 0 #keeps count of zeros
+    cnt = 0
     ans = 0
-    for i in range(len(lst)):
-
-        if lst[i] == "0": #if lst[i] eq 0; cnt is increased by 1
-            zero_count+=1
-
-        #cnt += A[r] == "0"
-
-        if zero_count > 1:
-            if lst[l] == "0":
-                zero_count -= 1
+    for r in range(len(A)):
+        cnt += A[r] == "0"
+        if cnt > 1:
+            cnt -= A[l] == "0"
             l += 1
-        ans = max(ans, i - l + 1)
-
-    return min(ans, lst.count('1'))
-
-
+        ans = max(ans, r - l + 1)
+        #print(r,cnt,ans,l)
+    return min(ans, A.count('1'))
 
 for i in lst1:
     print(solve(i))
