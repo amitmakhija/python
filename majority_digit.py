@@ -3,7 +3,7 @@ This program takes a list and finds out the element with majority times appearan
 Majority = greater than total length / 2
 '''
 
-lst = [[1,2,2,2,2,4,5,2,2,3,4,1],[5,5,5,3,2,2,2,5,5],[5,4,3,2,3,2,4,5,6]]
+lst = [[1,2,2,2,2,4,5,2,2,2,3,4,1],[5,5,5,3,2,2,2,5,5],[5,4,3,2,3,2,4,5,6]]
 
 def solve(lst):
     majority = lst[0]
